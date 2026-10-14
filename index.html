@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="slider.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <h1>Image Slider</h1>
+    <p class="subtitle">A Image slider created suing HTML , CSS and JavaScript</p>
+
+    <section class="slider" aria-label="Nature image slider">
+      <div class="slider-window">
+        <div class="slider-track">
+          <div class="slide"><img src="assets/mountains.jpg" alt="Mountains at sunrise"></div>
+          <div class="slide"><img src="assets/lake.jpg" alt="Blue lake with hills"></div>
+          <div class="slide"><img src="assets/desert.jpg" alt="Sand dunes at sunset"></div>
+          <div class="slide"><img src="assets/forest.jpg" alt="Green forest landscape"></div>
+        </div>
+
+        <button class="arrow previous" type="button" aria-label="Previous image">&#10094;</button>
+        <button class="arrow next" type="button" aria-label="Next image">&#10095;</button>
+      </div>
+
+      <div class="slider-footer">
+        <span id="counter" aria-live="polite">1 / 4</span>
+        <div class="dots" role="group" aria-label="Choose an image"></div>
+      </div>
+    </section>
+    <p class="hint">Click the arrows or dots to view more images.</p>
+  </main>
+</body>
+</html>
